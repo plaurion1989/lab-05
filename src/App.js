@@ -21,8 +21,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
+      <div style={{backgroundColor: "mintcream"}}>
+        <Header/>
         <main>
           <CreateForm onCreate={this.handleCreate} />
           <ReportTable hours={hours} reports={this.state.standReports} />

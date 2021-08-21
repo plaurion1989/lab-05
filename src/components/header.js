@@ -1,7 +1,9 @@
+import { Navbar } from "react-bootstrap";
+
 export default function Header() {
     return (
-        <header>
+        <Navbar sticky="top" style={{backgroundColor: "darkcyan"}}>
             <h1>Cookie Stand Admin</h1>
-        </header>
+        </Navbar>
     );
 }

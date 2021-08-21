@@ -1,3 +1,6 @@
+import { Container } from 'react-bootstrap';
+import './report.css';
+
 export default function ReportTable(props) {
 
     if (props.reports.length === 0) {
@@ -6,6 +9,7 @@ export default function ReportTable(props) {
     const headers = ['Location', ...props.hours, 'Totals'];
 
     return (
+        <Container id={'table'}>
         <table>
             <HeaderRow headerValues={headers} />
 
@@ -18,6 +22,7 @@ export default function ReportTable(props) {
             <FooterRow reports={props.reports} />
 
         </table>
+        </Container>
     );
 }
 
@@ -41,7 +46,7 @@ function ReportRow({ report }) {
 
     return (
 
-        <tr>
+        <tr id={"alternate"}>
             {values.map((value, i) => <td key={i}>{value}</td>)}
         </tr>
     );

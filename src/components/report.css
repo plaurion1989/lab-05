@@ -1,0 +1,16 @@
+#alternate:nth-child(odd) {
+background-color: darkcyan;
+}
+thead{
+  background-color: palegreen;
+}
+tfoot{
+  background-color: palegreen;
+}
+#table{
+  margin-top: 15px;
+  margin-bottom: 75px;
+}
+table{
+  margin: auto;
+}
